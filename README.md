@@ -1,4 +1,4 @@
-# basicBot (custom)
+# dragonBot (basicBot (custom))
 > A not so basic bot for plug.dj
 
 ---
