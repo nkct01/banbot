@@ -14,7 +14,7 @@
         var bot = window.bot;
 
         // Load custom settings set below
-        // bot.retrieveSettings();
+        bot.retrieveSettings();
 
         //Extend the bot here, either by calling another function or here directly.
 
