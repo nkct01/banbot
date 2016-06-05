@@ -108,7 +108,7 @@
       commandLiteral: "!",
       blacklists: {
         op: "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/op.json",
-        bl "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/bl.json"
+        bl: "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/bl.json"
       }
     }));
 
