@@ -46,21 +46,21 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "arkhamBotBackup",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
       afkRemoval: true,
-      maximumDc: 60,
+      maximumDc: 120,
       bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
@@ -68,13 +68,13 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      voteSkip: true,
+      voteSkipLimit: 12,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 7,
       autodisable: true,
-      commandCooldown: 30,
+      commandCooldown: 1,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -85,15 +85,17 @@
       ["sound", "The song you played had bad sound quality or no sound. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
       ["unavailable", "The song you played was not available for some users. "]
+      ["bl", "This song is blacklisted. "]
+      ["genre", "You played a banned genre. "]
       ],
-      afkpositionCheck: 15,
-      afkRankCheck: "ambassador",
+      afkpositionCheck: 10,
+      afkRankCheck: "manager",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
-      filterChat: true,
+      motd: "ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org",
+      filterChat: false,
       etaRestriction: false,
-      welcome: true,
+      welcome: false,
       opLink: null,
       rulesLink: null,
       themeLink: null,
