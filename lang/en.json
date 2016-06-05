@@ -57,8 +57,8 @@
         "Forget about it."
     ],
     "nodatafound": "No previous data found.",
-    "currentlang": "\/me [%%FUNCTION%%] [@%%NAME%%] Language currently set to: %%LANGUAGE%%",
-    "langerror": "\/me [%%FUNCTION%%] [@%%NAME%%] The language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
+    "currentlang": "\/me @%%NAME%% >> Language currently set to: %%LANGUAGE%%",
+    "langerror": "\/me @%%NAME%% >> The language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
     "langset": "\/me [%%FUNCTION%%] [@%%NAME%%] Language now set to: %%LANGUAGE%%",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
