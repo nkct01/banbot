@@ -84,9 +84,9 @@
       ["mix", "You played a mix, which is against the rules. "],
       ["sound", "The song you played had bad sound quality or no sound. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
-      ["bl", "This song is blacklisted. "]
-      ["genre", "You played a banned genre. "]
+      ["unavailable", "The song you played was not available for some users. "],
+      ["bl", "This song is blacklisted. "],
+      ["genre", "You played a banned genre. "],
       ],
       afkpositionCheck: 10,
       afkRankCheck: "manager",
