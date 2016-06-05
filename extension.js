@@ -107,8 +107,8 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        op: "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/op.json",
+        bl "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/bl.json"
       }
     }));
 
