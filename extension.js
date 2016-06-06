@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "arkhamBotBackup",
+      botName: "arkhamBot",
       language: "english",
       chatLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
