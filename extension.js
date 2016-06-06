@@ -46,9 +46,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "dragonBot",
+      botName: "arkhamBotBackup",
       language: "english",
-      chatLink: "https://rawgit.com/ArceusMaster0493/dragonBot/master/lang/en.json",
+      chatLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
@@ -66,7 +66,7 @@
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
-      cycleGuard: true,
+      cycleGuard: false,
       maximumCycletime: 10,
       voteSkip: true,
       voteSkipLimit: 12,
@@ -74,7 +74,7 @@
       timeGuard: true,
       maximumSongLength: 7,
       autodisable: true,
-      commandCooldown: 1,
+      commandCooldown: 5,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -92,23 +92,23 @@
       afkRankCheck: "manager",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Enjoy music!",
+      motd: "ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org",
       filterChat: false,
       etaRestriction: false,
-      welcome: true,
+      welcome: false,
       opLink: null,
-      rulesLink: "https://rawgit.com/ArceusMaster0493/dragonBot/master/doc/rules.md",
+      rulesLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/doc/rules.md",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Tip: Remember to read our rules with !rules.", "Tip: Use !eta to check your waiting time."],
+      intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All nightcore and Minecraft parody songs are blacklisted."],
       messageInterval: 5,
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        op: "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/op.json",
-        bl: "https://rawgit.com/ArceusMaster0493/dragonBot/master/blacklists/bl.json"
+        op: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/blacklists/op.json",
+        bl: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/blacklists/bl.json"
       }
     }));
 
