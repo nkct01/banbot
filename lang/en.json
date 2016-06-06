@@ -182,7 +182,7 @@
     "unmuted": "\/me @%%NAME%% >> Unmuted @%%USERNAME%%.",
     "muterank": "\/me @%%NAME%% >> You can't mute persons with an equal or higher rank than you.",
     "oplist": "\/me @%%NAME%% >> OP list: %%LINK%%",
-    "pong": "\/me @%%NAME%% >> Pong!",
+    "pong": "\/me Pong!",
     "reload": "\/me @%%NAME%% >> Reloading.",
     "removenotinwl": "\/me @%%NAME%% >> Specified user %%USERNAME%% is not in the waitlist.",
     "roomrules": "\/me Please find the room rules here: %%LINK%%",
