@@ -189,7 +189,7 @@
     "sessionstats": "\/me @%%NAME%% >> Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
     "forceskip": "\/me @%%NAME%% >> You used forceskip.",
     "madeby": "\/me @%%NAME%% >> This bot was made by %%NAME%%.",
-    "activefor": "/me @%%NAME%% >> I have been active for %%TIME%%.",
+    "activefor": "/me I have been active for %%TIME%%.",
     "swapinvalid": "\/me @%%NAME%% >> Invalid user specified. (No names with spaces!)",
     "swapwlonly": "\/me @%%NAME%% >> Please only swap users that are in the waitlist!",
     "swapping": "\/me @%%NAME%% >> Swapping @%%NAME1%% with @%%NAME2%%.",
