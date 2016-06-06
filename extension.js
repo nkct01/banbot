@@ -103,7 +103,7 @@
       youtubeLink: null,
       website: null,
       intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All nightcore and Minecraft parody songs are blacklisted."],
-      messageInterval: 5,
+      messageInterval: 1,
       songstats: true,
       commandLiteral: "!",
       blacklists: {
