@@ -50,6 +50,19 @@
             }
           }
         };
+        
+                bot.commands.dyldoCommand = {
+          command: 'list',  // The command to be called. With the standard command literal this would be: !bacon
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me Blacklisted songs: https://github.com/ArceusMaster0493/arkhamBot/blob/master/doc/blacklist.md");
+            }
+          }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
