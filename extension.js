@@ -130,7 +130,7 @@
       website: null,
       intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted."],
       messageInterval: 1,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         op: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/blacklists/op.json",
