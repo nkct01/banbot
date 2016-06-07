@@ -128,7 +128,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted."],
+      intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played!"],
       messageInterval: 1,
       songstats: false,
       commandLiteral: "!",
