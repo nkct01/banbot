@@ -51,8 +51,8 @@
           }
         };
         
-        bot.commands.listCommand = {
-          command: 'list',  // The command to be called. With the standard command literal this would be: !bacon
+        bot.commands.bllistCommand = {
+          command: 'bllist',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
           functionality: function (chat, cmd) {
@@ -72,7 +72,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me We only allow EDM (electronic dance music) here! Feel free to ask a staff if you are unsure whether your song is allowed.");
+              API.sendChat("/me Tip: We only allow EDM (electronic dance music) here! Feel free to ask a staff if you are unsure whether your song is allowed.");
             }
           }
         };
@@ -140,7 +140,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played!"],
+      intervalMessages: ["Tip: We only allow EDM (electronic dance music) here! Feel free to ask a staff if you are unsure whether your song is allowed.", "Tip: Remember to read our rules by clicking on the room name.", "Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played!"],
       messageInterval: 3,
       songstats: false,
       commandLiteral: "!",
