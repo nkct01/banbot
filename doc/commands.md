@@ -108,12 +108,15 @@ User
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fb | | links to the room's Facebook page (if set in the settings) |
+|!genre | | shows the room's genre |
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
 |!help | | links to an image to help get people started on plug |
 |~~!join~~ | | ~~join the roulette if it's up~~ |
 |~~!leave~~ | | ~~leave the roulette if you joined~~ |
 |!link | | when the user is the DJ, give a link to the current song |
+|!list | | a link to a list of blacklisted songs |
+|!dyldo | | shows a dyldo |
 |!op | | links to the OverPlayed list (if set in the settings) |
 |!ping | | pong! |
 |!purchase | | returns link to purchase more plug notes |
