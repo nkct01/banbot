@@ -63,6 +63,19 @@
             }
           }
         };
+        
+        bot.commands.listCommand = {
+          command: 'genre',  // The command to be called. With the standard command literal this would be: !bacon
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me We only allow EDM (electronic dance music) here! Feel free to ask a staff if you are unsure whether your song is allowed.");
+            }
+          }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
@@ -112,7 +125,6 @@
       ["nsfw", "The song you contained was NSFW (image or sound). "],
       ["unavailable", "The song you played was not available for some users. "],
       ["bl", "This song is blacklisted. "],
-      ["genre", "You played a banned genre. "],
       ],
       afkpositionCheck: 10,
       afkRankCheck: "manager",
