@@ -26,7 +26,7 @@ Manager
 |!usercommands | | toggle user commands |
 |!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit. |
 
-Bouncer+
+Bouncer+ (When applicable)
 --------
 
 |Command | Arguments |  Description |
