@@ -77,7 +77,7 @@
           }
         };
         
-        bot.commands.staffCommand: {
+        bot.commands.staffCommand = {
           command: 'staff',
           rank: 'user',
           type: 'exact',
