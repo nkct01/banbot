@@ -9,5 +9,6 @@ All songs listed below will be instantly skipped when played.
 * RhythmResort-リズムリゾート - BANANA NIGHTCORE!!! (Onision Parody) [Reason: Troll song]
 * CaptainSparklez vs SkyDoesMinecraft - Minecraft Rap Battle (An Original Minecraft Song) [Reason: Banned genre]
 * RemixGodSuede, EntreProducer - MY Ding-A-Ling REMIX FULL SONG [Reason: Troll song]
+* ? - Screaming Deer Remix Compilation [Reason: Troll song]
 
 In addition, all Minecraft parody songs are banned.
