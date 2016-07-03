@@ -149,7 +149,7 @@
       etaRestriction: false,
       welcome: false,
       opLink: null,
-      rulesLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/doc/rules.md",
+      rulesLink: "https://github.com/ArceusMaster0493/arkhamBot/blob/master/doc/rules.md",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
