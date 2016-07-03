@@ -21,5 +21,5 @@ Rules & Punishments:
 * Player/Staff Disrespect: 1h/1d/1d ban
 * Playing Offensive Videos/Songs: 1h/1d/1d/1d ban
 * Repeatedly Playing Inappropriate/Troll Songs: 1h/1d/1d ban
-* Advertising: 1h/1d/1d/forever ban
-* Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/forever ban
+* Advertising: 1h/1d/1d/perm ban
+* Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
