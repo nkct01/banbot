@@ -3,6 +3,7 @@ Song is skipped when:
 * Song is racist or overly offensive.
 * Song was just played recently or is overplayed.
 * Track is a troll song, Minecraft parody, or non songs.
+* Track is a random songs compilation.
 * He/she is advertising.
 
 User is removed from the wait list when:
@@ -20,6 +21,6 @@ Rules & Punishments:
 * Spamming or Trolling: 1h/1h/1d/1d ban
 * Player/Staff Disrespect: 1h/1d/1d ban
 * Playing Offensive Videos/Songs: 1h/1d/1d/1d ban
-* Repeatedly Playing Inappropriate/Troll Songs: 1h/1d/1d ban
+* Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/1d ban
 * Advertising: 1h/1d/1d/perm ban
 * Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
