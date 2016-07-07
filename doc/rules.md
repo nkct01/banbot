@@ -17,6 +17,7 @@ User is banned when:
 * He/she is discovered to use alts for extra DJ chances.
 * He/she is advertising.
 * He/she repeatedly asks for skips or mehs.
+* He/she spams `!gif` or uses it to search inappropriate images.
 
 Rules & Punishments:
 * Spamming or Trolling: 1h/1h/1d/3d ban
@@ -25,4 +26,5 @@ Rules & Punishments:
 * Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/3d ban
 * Advertising: 1d/perm ban
 * Repeatedly asking for skips / encouraging mehs: 1h/1h/1d ban
+* Abusing `!gif`: 1h/1d ban
 * Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
