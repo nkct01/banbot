@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "ArceusMaster0493";
+    var fork = "smashbro12";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -99,13 +99,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "arkhamBot",
+      botName: "ArkhamBot",
       language: "english",
       chatLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
+      startupCap: 200, // 1-200
+      startupVolume: 20, // 0-100
       startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
@@ -122,7 +122,7 @@
       cycleGuard: false,
       maximumCycletime: 10,
       voteSkip: true,
-      voteSkipLimit: 12,
+      voteSkipLimit: 10,
       historySkip: true,
       timeGuard: true,
       maximumSongLength: 7,
@@ -133,29 +133,29 @@
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
+      ["history", "This song is in the history. Please play songs that have not been played recently. "],
       ["mix", "You played a mix, which is against the rules. "],
       ["sound", "The song you played had bad sound quality or no sound. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "],
+      ["unavailable", "The song you played was not available for some users. Please find a different version of your song. "],
       ["bl", "This song is blacklisted. "],
       ],
       afkpositionCheck: 10,
       afkRankCheck: "manager",
-      motdEnabled: false,
-      motdInterval: 5,
+      motdEnabled: true,
+      motdInterval: 10,
       motd: "ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org",
       filterChat: false,
       etaRestriction: false,
       welcome: false,
       opLink: null,
-      rulesLink: "https://github.com/ArceusMaster0493/arkhamBot/blob/master/doc/rules.md",
+      rulesLink: "https://docs.google.com/document/d/1ppQL00dE91zUEwQUzZyvuocWYtNDCl-GxfbXekwawmM/edit?ts=577ea4ee#",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
-      website: null,
-      intervalMessages: ["Tip: Use !eta to check your waiting time.", "Tip: All Minecraft parody songs are blacklisted.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played."],
-      messageInterval: 3,
+      website: "arkhamnetwork.org",
+      intervalMessages: ["Tip: Use !eta to check your waiting time.", "Tip: All parody songs are considered trolls and will be skipped.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played."],
+      messageInterval: 5,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
