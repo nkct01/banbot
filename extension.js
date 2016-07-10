@@ -59,7 +59,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Blacklisted songs: https://github.com/ArceusMaster0493/arkhamBot/blob/master/doc/blacklist.md");
+              API.sendChat("/me Blacklisted songs: https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json");
             }
           }
         };
@@ -72,7 +72,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Tip: We only allow EDM (electronic dance music) here! Feel free to ask a staff if you are unsure whether your song is allowed.");
+              API.sendChat("/me Tip: All music genres are allowed here! Feel free to ask a staff if you are unsure whether your song is allowed.");
             }
           }
         };
@@ -101,14 +101,14 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "ArkhamBot",
       language: "english",
-      chatLink: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/lang/en.json",
+      chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 20, // 0-100
       startupEmoji: true, // true or false
       autowoot: true,
-      autoskip: false,
+      autoskip: true,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
@@ -159,8 +159,8 @@
       songstats: false,
       commandLiteral: "!",
       blacklists: {
-        op: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/blacklists/op.json",
-        bl: "https://rawgit.com/ArceusMaster0493/arkhamBot/master/blacklists/bl.json"
+        op: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/op.json",
+        bl: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json"
       }
     }));
 
