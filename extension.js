@@ -90,6 +90,32 @@
             }
           }
         },
+        
+         bot.commands.staffCommand = {
+          command: 'smash',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me I'd Smash. http://arkhamnetwork.org/community/data/avatars/l/3/3728.jpg?1449024664");
+            }
+          }
+        },
+        
+        bot.commands.staffCommand = {
+          command: 'ghost',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me Oooooooooooh, very spooky. http://arkhamnetwork.org/community/data/avatars/l/0/427.jpg?1465585117");
+            }
+          }
+        },
 
         // Load the chat package again to account for any changes
         bot.loadChat();
