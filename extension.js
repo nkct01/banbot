@@ -89,7 +89,7 @@
               API.sendChat("/me Current staffs online: " + staff);
             }
           }
-        },
+        };
         
          bot.commands.staffCommand = {
           command: 'smash',
@@ -99,10 +99,10 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me I'd Smash. http://arkhamnetwork.org/community/data/avatars/l/3/3728.jpg?1449024664");
+              API.sendChat("/me I'd Smash. http://arkhamnetwork.org/community/data/avatars/l/3/3728.jpg");
             }
           }
-        },
+        };
         
         bot.commands.staffCommand = {
           command: 'ghost',
@@ -112,10 +112,10 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Oooooooooooh, very spooky. http://arkhamnetwork.org/community/data/avatars/l/0/427.jpg?1465585117");
+              API.sendChat("/me Oooooooooooh, very spooky. http://arkhamnetwork.org/community/data/avatars/l/0/427.jpg");
             }
           }
-        },
+        };
         
          bot.commands.staffCommand = {
           command: 'mlg',
@@ -128,7 +128,7 @@
               API.sendChat("/me Get 420NOSK0PED http://i.makeagif.com/media/7-13-2015/odDOVx.mp4");
             }
           }
-        },
+        };
         
         bot.commands.staffCommand = {
           command: 'pepe',
@@ -142,6 +142,7 @@
             }
           }
         },
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
