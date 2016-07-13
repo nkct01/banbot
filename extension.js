@@ -91,7 +91,7 @@
           }
         };
         
-         bot.commands.staffCommand = {
+         bot.commands.smashCommand = {
           command: 'smash',
           rank: 'user',
           type: 'exact',
@@ -104,7 +104,7 @@
           }
         };
         
-        bot.commands.staffCommand = {
+        bot.commands.ghostCommand = {
           command: 'ghost',
           rank: 'user',
           type: 'exact',
@@ -117,7 +117,7 @@
           }
         };
         
-         bot.commands.staffCommand = {
+         bot.commands.mlgCommand = {
           command: 'mlg',
           rank: 'user',
           type: 'exact',
@@ -128,9 +128,9 @@
               API.sendChat("/me Get 420NOSK0PED http://i.makeagif.com/media/7-13-2015/odDOVx.mp4");
             }
           }
-        };
+        },
         
-        bot.commands.staffCommand = {
+        bot.commands.pepeCommand = {
           command: 'pepe',
           rank: 'user',
           type: 'exact',
@@ -180,7 +180,7 @@
       maximumSongLength: 6,
       autodisable: true,
       commandCooldown: 10,
-      usercommandsEnabled: false,
+      usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
