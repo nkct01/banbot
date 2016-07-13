@@ -24,24 +24,11 @@
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
 
-        // Example code for a bot command:
-        bot.commands.baconCommand = {
-          command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+             // Example code for a bot command:
+        bot.commands.mwarCommand = {
+          command: 'mwar',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me Bacon!!!");
-            }
-          }
-        };
-        
-        bot.commands.mwarCommand = {
-          command: 'mwar',
-          rank: 'user',
-          type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
@@ -50,6 +37,7 @@
             }
           }
         };
+        
         bot.commands.dyldoCommand = {
           command: 'dyldo',
           rank: 'user',
@@ -58,7 +46,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me http://arkhamnetwork.org/community/data/avatars/l/36/36281.jpg");
+              API.sendChat("/me http://arkhamnetwork.org/community/data/avatars/l/36/36281.jpg?1464239177");
             }
           }
         };
@@ -71,7 +59,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Blacklisted songs: https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json");
+              API.sendChat("/me Blacklisted songs: https://github.com/ArceusMaster0493/arkhamBot/blob/master/doc/blacklist.md");
             }
           }
         };
@@ -84,24 +72,49 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Tip: All music genres are allowed here! Feel free to ask a staff if you are unsure whether your song is allowed.");
+              API.sendChat("/me Tip: We allow all kinds of music except Minecraft Parodies!");
             }
           }
         };
         
-        bot.commands.staffCommand = {
-          command: 'staff',
+        bot.commands.ghostCommand = {
+          command: 'ghost',
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              var staff = API.getStaff();
-              API.sendChat("/me Current staffs online: " + staff);
+              API.sendChat("/me Ooooooooooooooo, Spooky. http://arkhamnetwork.org/community/data/avatars/l/0/427.jpg");
             }
           }
         };
+        
+        bot.commands.smashCommand = {
+          command: 'smash',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me I'd Smash. http://arkhamnetwork.org/community/data/avatars/l/3/3728.jpg");
+            }
+          }
+        };
+        
+        bot.commands.pepeCommand = {
+          command: 'pepe',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me https://66.media.tumblr.com/f2dd023bc84c5bfb06475dc14c67836c/tumblr_nut4qvjm3l1ucxsygo1_500.gif");
+            }
+          }
+        },
         
         // Load the chat package again to account for any changes
         bot.loadChat();
