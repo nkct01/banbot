@@ -91,58 +91,6 @@
           }
         };
         
-         bot.commands.smashCommand = {
-          command: 'smash',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me I'd Smash. http://arkhamnetwork.org/community/data/avatars/l/3/3728.jpg");
-            }
-          }
-        };
-        
-        bot.commands.ghostCommand = {
-          command: 'ghost',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me Oooooooooooh, very spooky. http://arkhamnetwork.org/community/data/avatars/l/0/427.jpg");
-            }
-          }
-        };
-        
-         bot.commands.mlgCommand = {
-          command: 'mlg',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me Get 420NOSK0PED http://i.makeagif.com/media/7-13-2015/odDOVx.mp4");
-            }
-          }
-        },
-        
-        bot.commands.pepeCommand = {
-          command: 'pepe',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me https://67.media.tumblr.com/7583a6b38c26ca2d3b79faa5953572f9/tumblr_o0ifrv3R1B1ubm73lo1_500.gif");
-            }
-          }
-        },
-        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
