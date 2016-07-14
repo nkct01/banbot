@@ -124,7 +124,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "ArkhamBot",
+      botName: "BanBot",
       language: "english",
       chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
