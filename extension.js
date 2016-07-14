@@ -140,7 +140,7 @@
       afkRemoval: false,
       maximumDc: 120,
       bouncerPlus: true,
-      blacklistEnabled: true,
+      blacklistEnabled: false,
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
