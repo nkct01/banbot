@@ -169,7 +169,7 @@
       afkRankCheck: "manager",
       motdEnabled: true,
       motdInterval: 10,
-      motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org.",
+      motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community.",
       filterChat: false,
       etaRestriction: false,
       welcome: false,
