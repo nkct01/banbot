@@ -174,7 +174,7 @@
       etaRestriction: false,
       welcome: false,
       opLink: null,
-      rulesLink: "https://docs.google.com/document/d/1ppQL00dE91zUEwQUzZyvuocWYtNDCl-GxfbXekwawmM/edit?ts=577ea4ee#",
+      rulesLink: "https://goo.gl/LsT5zA",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
