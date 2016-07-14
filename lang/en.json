@@ -20,7 +20,7 @@
         "gives you a rainbow cookie made with love :heart:",
         "gives you an old cookie that was left out in the rain, it's moldy.",
         "bakes you fresh cookies, it smells amazing.",
-        "grabs a cookie and shoves it down your throat."
+        "grabs a cookie and shoves it down your throat.",
     ],
     "balls": [
         "Signs point to yes.",
@@ -56,7 +56,8 @@
         "Are you kidding?",
         "Don't bet on it.",
         "Forget about it.",
-        "Focus your energy and try again."
+        "Focus your energy and try again.",
+        "Ask the Almighty BanBot again to receive a clear answer.",
     ],
     "nodatafound": "No previous data found.",
     "currentlang": "\/me @%%NAME%% >> Language currently set to: %%LANGUAGE%%",
