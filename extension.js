@@ -174,7 +174,7 @@
       etaRestriction: false,
       welcome: false,
       opLink: null,
-      rulesLink: "https://goo.gl/LsT5zA",
+      rulesLink: "https://github.com/smashbro12/arkhamBot/blob/master/doc/rules.md",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
