@@ -2,9 +2,10 @@ Song is skipped when:
 * Song is longer than 6 minutes.
 * Song is racist or overly offensive.
 * Song was just played recently or is overplayed.
-* Track is a troll song, Minecraft parody, or non songs.
+* Track is a troll song, a parody song, a minecraft song, or not a song at all.
 * Track is a random songs compilation.
 * He/she is advertising.
+* Song is not completely english.
 
 User is removed from the wait list when:
 * Troll songs are continuously played.
@@ -12,19 +13,30 @@ User is removed from the wait list when:
 
 User is banned when:
 * Same song is played over and over after 2 warnings from a staff member.
-* Extreme user disrespect is commited.
-* He/she abuses mehs.
+* He/she abuses mehs(spamming or mehing every song).
 * He/she is discovered to use alts for extra DJ chances.
 * He/she is advertising.
-* He/she repeatedly asks for skips or mehs.
 * He/she spams `!gif` or uses it to search inappropriate images.
+* Linking inappropriate websites or gifs.
+* He/she has been muted 3 or more times.
+* He/she has been banned on another account.
+
+User is muted when:
+* Extreme user/staff disrespect is commited.
+* He/she repeatedly asks for skips or mehs.
+* He/she is spamming in chat or commands.
+* He/she has been muted on another account.
 
 Rules & Punishments:
-* Spamming or Trolling: 1h/1h/1d/3d ban
-* Player/Staff Disrespect: 1h/1d/3d ban
-* Playing Offensive Videos/Songs: 1h/1d/3d ban
-* Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/3d ban
+* Spamming or Trolling: 1h/1h/1d ban
+* Player/Staff Disrespect: 1h/1d mute
+* Playing Offensive Videos/Songs: 1h/1d/perm ban
+* Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/perm ban
 * Advertising: 1d/perm ban
-* Repeatedly asking for skips / encouraging mehs: 1h/1h/1d ban
-* Abusing `!gif`: 1h/1d ban
+* Repeatedly asking for skips/encouraging mehs: 1h/1h/1d mute
+* Abusing `!gif`: 1h/1d mute
 * Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
+
+
+**NOTE**
+Getting removed from the waitlist is counted as a warning from a staff member.
