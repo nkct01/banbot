@@ -166,7 +166,7 @@
       ["bl", "This song is blacklisted. "],
       ],
       afkpositionCheck: 10,
-      afkRankCheck: "manager",
+      afkRankCheck: "resident dj",
       motdEnabled: true,
       motdInterval: 10,
       motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community.",
