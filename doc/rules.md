@@ -5,7 +5,7 @@ Song is skipped when:
 * Track is a troll song, a parody song, a minecraft song, or not a song at all.
 * Track is a random songs compilation.
 * He/she is advertising.
-* Song is not completely english.
+* Song is not in english.
 
 User is removed from the wait list when:
 * Troll songs are continuously played.
@@ -25,6 +25,7 @@ User is muted when:
 * Extreme user/staff disrespect is commited.
 * He/she repeatedly asks for skips or mehs.
 * He/she is spamming in chat or commands.
+* He/she is not speaking in english.
 * He/she has been muted on another account.
 
 Rules & Punishments:
