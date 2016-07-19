@@ -179,7 +179,7 @@
       fbLink: null,
       youtubeLink: null,
       website: "arkhamnetwork.org/community",
-      intervalMessages: ["Tip: Use !eta to check your waiting time.", "Tip: All parody songs are considered trolls and will be skipped.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played.Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community."],
+      intervalMessages: ["Tip: Use !eta to check your waiting time.", "Tip: All parody songs are considered trolls and will be skipped.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played.Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community.", "Remember to check out our community rules: https://github.com/smashbro12/arkhamBot/blob/master/doc/rules.md"],
       messageInterval: 5,
       songstats: false,
       commandLiteral: "!",
