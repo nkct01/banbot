@@ -26,6 +26,7 @@ User is muted when:
 * He/she repeatedly asks for skips or mehs.
 * He/she is spamming in chat or commands.
 * He/she is not speaking in english.
+* He/she is arguing excessivly with staff about rules and punishments.
 * He/she has been muted on another account.
 
 Rules & Punishments:
