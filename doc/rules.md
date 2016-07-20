@@ -35,8 +35,8 @@ Rules & Punishments:
 * Playing Offensive Videos/Songs: 1h/1d/perm ban
 * Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/perm ban
 * Advertising: 1d/perm ban
-* Repeatedly asking for skips/encouraging mehs: 1h/1h/1d mute
-* Abusing `!gif`: 1h/1d mute
+* Repeatedly asking for skips/encouraging mehs: 15m/30m/1h/1h/1d mute
+* Abusing `!gif`: 15m/30m/1h/1d mute
 * Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
 
 
