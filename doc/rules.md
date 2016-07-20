@@ -10,6 +10,7 @@ Song is skipped when:
 User is removed from the wait list when:
 * Troll songs are continuously played.
 * He/she is advertising.
+* He/she is coontinously playing songs in the room history.
 
 User is banned when:
 * Same song is played over and over after 2 warnings from a staff member.
@@ -25,6 +26,7 @@ User is muted when:
 * Extreme user/staff disrespect is commited.
 * He/she repeatedly asks for skips or mehs.
 * He/she is spamming in chat or commands.
+* He/she is using caps excessivly.
 * He/she is not speaking in english.
 * He/she is arguing excessivly with staff about rules and punishments.
 * He/she has been muted on another account.
