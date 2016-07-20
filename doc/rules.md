@@ -40,6 +40,6 @@ Rules & Punishments:
 * Abusing PlugDJ Perms: Demote from current rank or 1h/1d/1d/perm ban
 
 
-**NOTE**
-Getting removed from the waitlist is counted as a warning from a staff member.
-Staff members decide when rules are broken, and the punishment, not regular members.
+NOTE:
+*Getting removed from the waitlist is counted as a warning from a staff member.
+*Staff members decide when rules are broken, and the punishment, not regular members.
