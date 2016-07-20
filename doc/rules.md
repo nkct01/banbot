@@ -2,7 +2,7 @@ Song is skipped when:
 * Song is longer than 6 minutes.
 * Song is racist or overly offensive.
 * Song was just played recently or is overplayed.
-* Track is a troll song, a parody song, a minecraft song, or not a song at all(decided by online staff members).
+* Track is a troll song, a parody song, a minecraft song, or not a song at all.
 * Track is a random songs compilation.
 * He/she is advertising.
 * Song is not in english.
@@ -42,3 +42,4 @@ Rules & Punishments:
 
 **NOTE**
 Getting removed from the waitlist is counted as a warning from a staff member.
+Staff members decide when rules are broken, and the punishment, not regular members.
