@@ -152,8 +152,8 @@
       timeGuard: true,
       maximumSongLength: 6.17,
       autodisable: true,
-      commandCooldown: 20,
-      usercommandsEnabled: false,
+      commandCooldown: 30,
+      usercommandsEnabled: true
       skipPosition: 3,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
