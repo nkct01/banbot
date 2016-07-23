@@ -153,7 +153,7 @@
       maximumSongLength: 6.17,
       autodisable: true,
       commandCooldown: 30,
-      usercommandsEnabled: true
+      usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
