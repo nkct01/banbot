@@ -2,7 +2,7 @@ Song is skipped when:
 * Song is longer than 6 minutes.
 * Song is racist or overly offensive.
 * Song was just played recently or is overplayed.
-* Track is a troll song, a parody song, a minecraft song, or not a song at all.
+* Track is a troll song, a parody song, a minecraft song, ear rape, or not a song at all.
 * Track is a random songs compilation.
 * He/she is advertising.
 * Song is not in english.
