@@ -31,11 +31,11 @@ User is muted when:
 * He/she is arguing excessivly with staff about rules and punishments.
 * He/she has been muted on another account.
 
-Rules & Punishments:
+Punishments:
 * Spamming or Trolling: 1h/1h/1d ban
-* Player/Staff Disrespect: 1h/1d mute
+* Player/Staff Disrespect: warning/30m//1h/1d mute
 * Playing Offensive Videos/Songs: 1h/1d/perm ban
-* Repeatedly Playing Inappropriate/Troll Songs/Minecraft parodies/compilations: 1h/1d/perm ban
+* Repeatedly Playing Inappropriate/Troll Songs/Minecraft Parodies/Compilations/Recently Played Songs: 1h/1d/perm ban
 * Advertising: 1d/perm ban
 * Repeatedly asking for skips/encouraging mehs: 15m/30m/1h/1h/1d mute
 * Abusing `!gif`: 15m/30m/1h/1d mute
