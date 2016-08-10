@@ -152,7 +152,7 @@
       timeGuard: true,
       maximumSongLength: 6,
       autodisable: true,
-      commandCooldown: 30,
+      commandCooldown: 10,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
