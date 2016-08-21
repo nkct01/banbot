@@ -6,6 +6,7 @@ Song is skipped when:
 * Track is a random songs compilation.
 * He/she is advertising.
 * Song is not in english.
+* Song has mehs from at least 40% of the users who chatted in the last 15 minutes.
 
 User is removed from the wait list when:
 * Troll songs are continuously played.
