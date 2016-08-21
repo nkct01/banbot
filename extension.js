@@ -79,7 +79,7 @@
         
         bot.commands.ghostCommand = {
           command: 'ghost',
-          rank: 'user',
+          rank: 'bouncer',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -92,7 +92,7 @@
         
         bot.commands.smashCommand = {
           command: 'smash',
-          rank: 'user',
+          rank: 'bouncer',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -105,13 +105,26 @@
         
         bot.commands.pepeCommand = {
           command: 'pepe',
-          rank: 'user',
+          rank: 'bouncer',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("/me https://66.media.tumblr.com/f2dd023bc84c5bfb06475dc14c67836c/tumblr_nut4qvjm3l1ucxsygo1_500.gif");
+            }
+          }
+        };
+        
+        bot.commands.smashCommand = {
+          command: 'staff',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me In order to become staff in this community, you have to become a staff member on our minecraft server, mc.arkhamnetwork.org, or be extremely active, respectful, and rule-following(keep in mind very few people have become staff this way).");
             }
           }
         },
