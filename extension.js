@@ -124,7 +124,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me In order to become staff in this community, you have to become a staff member on our minecraft server, mc.arkhamnetwork.org, or be extremely active, respectful, and rule-following(keep in mind very few people have become staff this way).");
+              API.sendChat("/me Click here for more info on becoming staff in Arkham Network's Plug.dj community: http://arkhamnetwork.org/community/threads/applying-for-plugdj-staff.61770/ ).");
             }
           }
         },
