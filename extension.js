@@ -116,7 +116,7 @@
           }
         };
         
-        bot.commands.smashCommand = {
+        bot.commands.staffCommand = {
           command: 'staff',
           rank: 'user',
           type: 'exact',
@@ -127,8 +127,20 @@
               API.sendChat("/me Click here for more info on becoming staff in Arkham Network's Plug.dj community: http://arkhamnetwork.org/community/threads/applying-for-plugdj-staff.61770/.");
             }
           }
-        },
+        };
         
+        bot.commands.squidCommand = {
+          command: 'squid',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me Click here for more info on joining our Minecraft server! http://goo.gl/xkKYSQ");
+            }
+          }
+        },
         // Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -182,7 +194,7 @@
       afkRankCheck: "residentdj",
       motdEnabled: false,
       motdInterval: 10,
-      motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community.",
+      motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org. Use the info here to learn more about joining our server:http://goo.gl/xkKYSQ. Think you're fit for staff here in Arkham's plug.dj community? Apply here:http://goo.gl/sJOUqL.",
       filterChat: false,
       etaRestriction: false,
       welcome: false,
@@ -192,8 +204,8 @@
       fbLink: null,
       youtubeLink: null,
       website: "arkhamnetwork.org/community",
-      intervalMessages: ["Tip: Use !eta to check your waiting time.", "Tip: All parody songs are considered trolls and will be skipped.", "Tip: Need help? You can alert the staff with @staff <message>.", "Tip: You will be skipped if you play any song that has recently been played.Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org / play.arkhamnetwork.org. Or, visit us on our forums page at arkhamnetwork.org/community.", "Remember to check out our community rules: https://github.com/smashbro12/arkhamBot/blob/master/doc/rules.md"],
-      messageInterval: null,
+      intervalMessages: null,
+      messageInterval: false,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
