@@ -116,6 +116,18 @@
           }
         };
         
+        bot.commands.languageCommand = {
+          command: 'language',
+          rank: 'bouncer',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me You'd bettehttp://i.imgur.com/gyIbw3n.jpg");
+            }
+          }
+        };
         bot.commands.staffCommand = {
           command: 'staff',
           rank: 'user',
