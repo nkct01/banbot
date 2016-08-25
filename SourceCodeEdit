@@ -231,18 +231,18 @@
         return str;
     };
 
-    var botCreator = "Yemasthui";
-    var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botCreator = "The Basicbot Team";
+    var botMaintainer = "ArkhamNetwork"
+    var botCreatorIDs = ["8452233"];
 
     var basicBot = {
-        version: "2.9.1",
+        version: "2.9.2",
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/SourceCodeEdit",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+        chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,14 +250,14 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
+            scriptLink: "https://raw.githubusercontent.com/smashbro12/arkhamBot/master/SourceCodeEdit",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupCap: 200, // 1-200
+            startupVolume: 20, // 0-100
+            startupEmoji: true, // true or false
             autowoot: true,
-            autoskip: false,
+            autoskip: true,
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
@@ -272,11 +272,11 @@
             maximumCycletime: 10,
             voteSkip: false,
             voteSkipLimit: 10,
-            historySkip: false,
+            historySkip: true,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 6,
             autodisable: false,
-            commandCooldown: 30,
+            commandCooldown: 10,
             usercommandsEnabled: true,
             thorCommand: false,
             thorCooldown: 10,
@@ -291,27 +291,27 @@
                 ["unavailable", "The song you played was not available for some users. "]
             ],
             afkpositionCheck: 15,
-            afkRankCheck: "ambassador",
-            motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
-            filterChat: true,
+            afkRankCheck: "bouncer",
+            motdEnabled: true,
+            motdInterval: 10,
+            motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org. Use the info here to learn more about joining our server:http://goo.gl/xkKYSQ. Think you're fit for staff here in Arkham's plug.dj community? Apply here:http://goo.gl/sJOUqL.",
+            filterChat: false,
             etaRestriction: false,
-            welcome: true,
+            welcome: false,
             opLink: null,
-            rulesLink: null,
+            rulesLink: https://goo.gl/LsT5zA,
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
-            website: null,
+            website: www.arkhamnetwork.org,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json",
+                OP: "https://rawgit.com/smashbro12/arkhambot/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/smashbro12/arkhambot/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -1291,7 +1291,7 @@
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka', 'fag'
             ]
         },
         connectAPI: function () {
