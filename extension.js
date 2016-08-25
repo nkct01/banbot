@@ -165,7 +165,7 @@
       botName: "BanBot",
       language: "english",
       chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
-      scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/SourceCodeEdit",
+      scriptLink: "https://raw.githubusercontent.com/smashbro12/arkhamBot/master/sourcecode.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 20, // 0-100
@@ -216,7 +216,7 @@
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
-      website: "arkhamnetwork.org/community",
+      website: "www.arkhamnetwork.org/community",
       intervalMessages: null,
       messageInterval: false,
       songstats: false,
@@ -228,6 +228,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/smashbro12/arkhamBot/master/SourceCodeEdit", extend);
+    $.getScript("https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js", extend);
 
 }).call(this);
