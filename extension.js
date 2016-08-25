@@ -165,7 +165,7 @@
       botName: "BanBot",
       language: "english",
       chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
-      scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/SourceCode",
+      scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/SourceCodeEdit",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 20, // 0-100
