@@ -240,9 +240,9 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+        chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,18 +250,18 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
+            scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupCap: 200, // 1-200
+            startupVolume: 20, // 0-100
+            startupEmoji: true, // true or false
             autowoot: true,
-            autoskip: false,
+            autoskip: true,
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -272,11 +272,11 @@
             maximumCycletime: 10,
             voteSkip: false,
             voteSkipLimit: 10,
-            historySkip: false,
+            historySkip: true,
             timeGuard: true,
-            maximumSongLength: 10,
-            autodisable: false,
-            commandCooldown: 30,
+            maximumSongLength: 6,
+            autodisable: true,
+            commandCooldown: 320,
             usercommandsEnabled: true,
             thorCommand: false,
             thorCooldown: 10,
@@ -291,13 +291,13 @@
                 ["unavailable", "The song you played was not available for some users. "]
             ],
             afkpositionCheck: 15,
-            afkRankCheck: "ambassador",
+            afkRankCheck: "user",
             motdEnabled: false,
             motdInterval: 5,
             motd: "Temporary Message of the Day",
-            filterChat: true,
+            filterChat: false,
             etaRestriction: false,
-            welcome: true,
+            welcome: false,
             opLink: null,
             rulesLink: null,
             themeLink: null,
@@ -1291,7 +1291,7 @@
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka', 'fag',
             ]
         },
         connectAPI: function () {
@@ -1539,7 +1539,7 @@
 
             addCommand: {
                 command: 'add',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1563,7 +1563,7 @@
 
             afklimitCommand: {
                 command: 'afklimit',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1583,7 +1583,7 @@
 
             afkremovalCommand: {
                 command: 'afkremoval',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1676,7 +1676,7 @@
 
             autoskipCommand: {
                 command: 'autoskip',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1869,7 +1869,7 @@
 
             clearchatCommand: {
                 command: 'clearchat',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1900,7 +1900,7 @@
 
             cmddeletionCommand: {
                 command: ['commanddeletion', 'cmddeletion', 'cmddel'],
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2097,7 +2097,7 @@
 
             deletechatCommand: {
                 command: 'deletechat',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2490,7 +2490,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
@@ -2555,7 +2555,7 @@
 
             lockCommand: {
                 command: 'lock',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2568,7 +2568,7 @@
 
             lockdownCommand: {
                 command: 'lockdown',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2753,7 +2753,7 @@
 
             moveCommand: {
                 command: 'move',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2854,7 +2854,7 @@
             },
 
             pingCommand: {
-                command: 'ping',
+                command: 'residentdj',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2907,7 +2907,7 @@
 
             removeCommand: {
                 command: 'remove',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2958,7 +2958,7 @@
 
             rouletteCommand: {
                 command: 'roulette',
-                rank: 'mod',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3075,7 +3075,7 @@
 
             songstatsCommand: {
                 command: 'songstats',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3217,7 +3217,7 @@
 
             swapCommand: {
                 command: 'swap',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3459,7 +3459,7 @@
 
             unlockCommand: {
                 command: 'unlock',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3532,7 +3532,7 @@
 
             usercommandsCommand: {
                 command: 'usercommands',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3572,7 +3572,7 @@
 
             voteskipCommand: {
                 command: 'voteskip',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3595,7 +3595,7 @@
 
             welcomeCommand: {
                 command: 'welcome',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
