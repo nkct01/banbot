@@ -2414,15 +2414,15 @@
                 }
             },
 
-            bot.commands.genreCommand = {
+            kickCommand = {
                 command: 'kick',
-                 rank: 'bouncer',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bot.commands.executable(this.rank, chat)) return void (0);
-                 else {
-                    API.sendChat("/me The Kick command currently does not work.");
+                   if (!bot.commands.executable(this.rank, chat)) return void (0);
+                   else {
+                      API.sendChat("/me The Kick command currently does not work.");
                     }
                 }
             },
