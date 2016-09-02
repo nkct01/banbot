@@ -2425,7 +2425,7 @@
                     API.sendChat("/me The Kick command currently does not work.");
                     }
                 }
-            };
+            },
 
             killCommand: {
                 command: 'kill',
