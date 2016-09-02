@@ -57,7 +57,6 @@
             $.getScript('https://cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js', loadSocket);
         } else loadSocket();
     }
-
     var sendToSocket = function () {
         var basicBotSettings = basicBot.settings;
         var basicBotRoom = basicBot.room;
@@ -1498,7 +1497,6 @@
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                                 if( !basicBot.commands.executable(this.rank, chat) ) return void (0);
                                 else{
-
                                 }
                         }
                 },
@@ -2046,9 +2044,7 @@
             },
 
             /*
-
             // This does not work anymore.
-
             deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
@@ -2069,18 +2065,15 @@
                         for (var i = 0; i < chats.length; i++) {
                             var n = from[i].textContent;
                             if (name.trim() === n.trim()) {
-
                                 // var messagecid = $(message)[i].getAttribute('data-cid');
                                 // var emotecid = $(emote)[i].getAttribute('data-cid');
                                 // API.moderateDeleteChat(messagecid);
-
                                 // try {
                                 //     API.moderateDeleteChat(messagecid);
                                 // }
                                 // finally {
                                 //     API.moderateDeleteChat(emotecid);
                                 // }
-
                                 if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
                                     API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
                                 } else {
@@ -2092,7 +2085,6 @@
                     }
                 }
             },
-
             */
 
             deletechatCommand: {
@@ -2414,15 +2406,15 @@
                 }
             },
 
-            kickCommand = {
+            kickCommand: {
                 command: 'kick',
                 rank: 'bouncer',
-                type: 'exact',
+                type: 'startsWith',
                 functionality: function (chat, cmd) {
-                   if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                   if (!bot.commands.executable(this.rank, chat)) return void (0);
-                   else {
-                      API.sendChat("/me The Kick command currently does not work.");
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
                     }
                 }
             },
