@@ -2414,50 +2414,18 @@
                 }
             },
 
-            kickCommand: {
+            bot.commands.genreCommand = {
                 command: 'kick',
-                rank: 'bouncer',
-                type: 'startsWith',
+                 rank: 'bouncer',
+                type: 'exact',
                 functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        var lastSpace = msg.lastIndexOf(' ');
-                        var time;
-                        var name;
-                        if (lastSpace === msg.indexOf(' ')) {
-                            time = 0.25;
-                            name = msg.substring(cmd.length + 2);
-                        }
-                        else {
-                            time = msg.substring(lastSpace + 1);
-                            name = msg.substring(cmd.length + 2, lastSpace);
-                        }
-
-                        var user = basicBot.userUtilities.lookupUserName(name);
-                        var from = chat.un;
-                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
-
-                        var permFrom = basicBot.userUtilities.getPermission(chat.uid);
-                        var permTokick = basicBot.userUtilities.getPermission(user.id);
-
-                        if (permFrom <= permTokick)
-                            return API.sendChat(subChat(basicBot.chat.kickrank, {name: chat.un}));
-
-                        if (!isNaN(time)) {
-                            API.sendChat(subChat(basicBot.chat.kick, {name: chat.un, username: name, time: time}));
-                            if (time > 24 * 60 * 60) API.moderateBanUser(user.id, 1, API.BAN.PERMA);
-                            else API.moderateBanUser(user.id, 1, API.BAN.DAY);
-                            setTimeout(function (id, name) {
-                                API.moderateUnbanUser(id);
-                                console.log('Unbanned @' + name + '. (' + id + ')');
-                            }, time * 60 * 1000, user.id, name);
-                        }
-                        else API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
+                   if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bot.commands.executable(this.rank, chat)) return void (0);
+                 else {
+                    API.sendChat("/me The Kick command currently does not work.");
                     }
                 }
-            },
+            };
 
             killCommand: {
                 command: 'kill',
