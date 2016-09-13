@@ -203,7 +203,7 @@
       timeGuard: true,
       maximumSongLength: 6,
       autodisable: false,
-      commandCooldown: 0,
+      commandCooldown: 20,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -216,8 +216,8 @@
       ["unavailable", "The song you played was not available for some users. Please find a different version of your song. "],
       ["bl", "This song is blacklisted. "],
       ],
-      afkpositionCheck: 10,
-      afkRankCheck: "residentdj",
+      afkpositionCheck: 1,
+      afkRankCheck: "user",
       motdEnabled: false,
       motdInterval: 10,
       motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org. Use the info here to learn more about joining our server:http://goo.gl/xkKYSQ. Think you're fit for staff here in Arkham's plug.dj community? Apply here:http://goo.gl/sJOUqL.",
@@ -232,7 +232,7 @@
       website: "www.arkhamnetwork.org/community",
       intervalMessages: null,
       messageInterval: false,
-      songstats: false,
+      songstats: true,
       commandLiteral: "!",
       blacklists: {
         op: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/op.json",
