@@ -72,7 +72,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Tip: We allow all kinds of music except parodies!");
+              API.sendChat("/me Tip: We allow all kinds of songs as long as they follow simple requirements: The are under 6 minutes (unless permission has been granted by a staff member) and they are not troll/compilation/inappropriate songs.");
             }
           }
         };
@@ -142,19 +142,7 @@
           }
         };
         
-        bot.commands.squidCommand = {
-          command: 'squid',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me Click here for more info on joining our Minecraft server! http://goo.gl/xkKYSQ");
-            }
-          }
-        };
-        
+
         bot.commands.hammerCommand = {
           command: 'hammer',
           rank: 'bouncer',
@@ -164,19 +152,6 @@
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("/me https://giant.gfycat.com/OptimisticBetterIndianglassfish.gif");
-            }
-          }
-        };
-        
-        bot.commands.serverCommand = {
-          command: 'server',
-          rank: 'user',
-          type: 'exact',
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("/me Click here for more info on joining our Minecraft server! http://goo.gl/xkKYSQ");
             }
           }
         },
