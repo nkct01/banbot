@@ -98,7 +98,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -231,13 +231,13 @@
     };
 
     var botCreator = "Yemasthui";
-    var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botMaintainer = "Smash|smashbro12"
+    var botCreatorIDs = ["3851534", "8452233"];
 
     var basicBot = {
-        version: "2.9.1",
+        version: "3.0.0",
         status: false,
-        name: "basicBot",
+        name: "Banbot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
         cmdLink: "http://git.io/245Ppg",
@@ -247,7 +247,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "BanBot",
             language: "english",
             chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
             scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
@@ -255,12 +255,12 @@
             startupCap: 200, // 1-200
             startupVolume: 20, // 0-100
             startupEmoji: true, // true or false
-            autowoot: true,
+            autowoot: false,
             autoskip: true,
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: false,
+            afkRemoval: true,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -275,7 +275,7 @@
             timeGuard: true,
             maximumSongLength: 6,
             autodisable: true,
-            commandCooldown: 320,
+            commandCooldown: 20,
             usercommandsEnabled: true,
             thorCommand: false,
             thorCooldown: 10,
@@ -289,28 +289,28 @@
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
             ],
-            afkpositionCheck: 15,
+            afkpositionCheck: 1,
             afkRankCheck: "user",
-            motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motdEnabled: true,
+            motdInterval: 10,
+            motd: "We want to hear your opinions! Tell us what YOU think about Arkham's PlugDJ Community: https://goo.gl/forms/dwvQ5a041Z5y7Upj1",
             filterChat: false,
             etaRestriction: false,
             welcome: false,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "https://goo.gl/LsT5zA",
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
-            website: null,
+            website: "www.arkhamnetwork.org/coommunity",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/smashbro12/arkhambot/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/op.json",
+                BANNED: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json"
             }
         },
         room: {
@@ -1290,7 +1290,7 @@
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka', 'fag',
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafucka', 'fag',
             ]
         },
         connectAPI: function () {
@@ -1561,7 +1561,7 @@
 
             afklimitCommand: {
                 command: 'afklimit',
-                rank: 'bouncer',
+                rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1917,7 +1917,7 @@
             },
 
             commandsCommand: {
-                command: 'commands',
+                command: ['commands', 'cmds'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2088,7 +2088,7 @@
             */
 
             deletechatCommand: {
-                command: 'deletechat',
+                command: ['deletechat', 'delchat'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -2408,7 +2408,7 @@
 
             kickCommand: {
                 command: 'kick',
-                rank: 'bouncer',
+                rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2471,7 +2471,7 @@
             },
 
             languageCommand: {
-                command: 'language',
+                command: ['language', 'lang'],
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -2860,7 +2860,7 @@
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'bouncer',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
