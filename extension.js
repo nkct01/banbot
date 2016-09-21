@@ -142,7 +142,18 @@
           }
         };
         
-
+        bot.commands.formCommand = {
+          command: 'form',
+          rank: 'user',
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me We want to hear your opinions! Tell us what your think about Arkham's PlugDJ Community: https://goo.gl/forms/dwvQ5a041Z5y7Upj1");
+            }
+          }
+        };
         bot.commands.hammerCommand = {
           command: 'hammer',
           rank: 'bouncer',
