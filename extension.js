@@ -217,7 +217,7 @@
       ],
       afkpositionCheck: 1,
       afkRankCheck: "user",
-      motdEnabled: false,
+      motdEnabled: true,
       motdInterval: 10,
       motd: "We want to hear your opinions! Tell us what YOU think about Arkham's PlugDJ Community: https://goo.gl/forms/dwvQ5a041Z5y7Upj1",
       filterChat: false,
