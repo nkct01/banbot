@@ -219,7 +219,7 @@
       afkRankCheck: "user",
       motdEnabled: false,
       motdInterval: 10,
-      motd: "Come join us on our Mincraft server! ArkhamNetwork IP: mc.arkhamnetwork.org. Use the info here to learn more about joining our server:http://goo.gl/xkKYSQ. Think you're fit for staff here in Arkham's plug.dj community? Apply here:http://goo.gl/sJOUqL.",
+      motd: "We want to hear your opinions! Tell us what YOU think about Arkham's PlugDJ Community: https://goo.gl/forms/dwvQ5a041Z5y7Upj1",
       filterChat: false,
       etaRestriction: false,
       welcome: false,
