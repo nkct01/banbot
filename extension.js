@@ -116,8 +116,8 @@
           }
         };
         
-        bot.commands.languageCommand = {
-          command: 'language',
+        bot.commands.swearCommand = {
+          command: 'swear',
           rank: 'bouncer',
           type: 'exact',
           functionality: function (chat, cmd) {
@@ -129,8 +129,8 @@
           }
         };
         
-        bot.commands.staffCommand = {
-          command: 'staff',
+        bot.commands.applyCommand = {
+          command: 'apply',
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
