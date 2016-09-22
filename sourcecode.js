@@ -98,7 +98,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/smashbro12/arkhamBot/master/lang/langindex.json", function (json) {
+        $.get("https://rawgit.com/smashbro12/arkhamBot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
