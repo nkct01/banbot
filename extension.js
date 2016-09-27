@@ -59,7 +59,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Blacklisted songs: https://github.com/smashbro12/BanBot/blob/master/doc/blacklist.md");
+              API.sendChat("/me Blacklisted songs: https://github.com/smashbro12/arkhamBot/blob/master/doc/blacklist.md");
             }
           }
         };
@@ -116,8 +116,8 @@
           }
         };
         
-        bot.commands.swearCommand = {
-          command: 'swear',
+        bot.commands.languageCommand = {
+          command: 'language',
           rank: 'bouncer',
           type: 'exact',
           functionality: function (chat, cmd) {
@@ -129,8 +129,8 @@
           }
         };
         
-        bot.commands.applyCommand = {
-          command: 'apply',
+        bot.commands.staffCommand = {
+          command: 'staff',
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
@@ -154,7 +154,6 @@
             }
           }
         };
-   
         bot.commands.hammerCommand = {
           command: 'hammer',
           rank: 'bouncer',
@@ -177,8 +176,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "BanBot",
       language: "english",
-      chatLink: "https://rawgit.com/smashbro12/BanBot/master/lang/en.json",
-      scriptLink: "https://rawgit.com/smashbro12/BanBot/master/sourcecode.js",
+      chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
+      scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 20, // 0-100
@@ -235,12 +234,12 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        op: "https://rawgit.com/smashbro12/BanBot/master/blacklists/op.json",
-        bl: "https://rawgit.com/smashbro12/BanBot/master/blacklists/bl.json"
+        op: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/op.json",
+        bl: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/smashbro12/BanBot/master/sourcecode.js", extend);
+    $.getScript("https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js", extend);
 
 }).call(this);
