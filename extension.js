@@ -235,7 +235,7 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        op: "https://rawgit.com/smashbro12/banBot/master/blacklists/op.json",
+        op: "https://rawgit.com/smashbro12/BanBot/master/blacklists/op.json",
         bl: "https://rawgit.com/smashbro12/BanBot/master/blacklists/bl.json"
       }
     }));
