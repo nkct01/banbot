@@ -239,9 +239,9 @@
         status: false,
         name: "Banbot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/smashbro12/BanBot/master/sourcecode.js",
+        scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/smashbro12/Banbot/master/lang/en.json",
+        chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -249,8 +249,8 @@
         settings: {
             botName: "BanBot",
             language: "english",
-            chatLink: "https://rawgit.com/smashbro12/BanBot/master/lang/en.json",
-            scriptLink: "https://rawgit.com/smashbro12/BanBot/master/sourcecode.js",
+            chatLink: "https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json",
+            scriptLink: "https://rawgit.com/smashbro12/arkhamBot/master/sourcecode.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 200, // 1-200
             startupVolume: 20, // 0-100
@@ -308,9 +308,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/smashbro12/Banbot/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/smashbro12/Banbot/master/blacklists/op.json",
-                BANNED: "https://rawgit.com/smashbro12/BanBot/master/blacklists/bl.json"
+                NSFW: "https://rawgit.com/smashbro12/arkhambot/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/op.json",
+                BANNED: "https://rawgit.com/smashbro12/arkhamBot/master/blacklists/bl.json"
             }
         },
         room: {
@@ -1740,7 +1740,7 @@
 
             banCommand: {
                 command: 'ban',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2482,7 +2482,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/smashbro12/BanBot/master/lang/en.json", function (json) {
+                        $.get("https://rawgit.com/smashbro12/arkhamBot/master/lang/en.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
@@ -2778,7 +2778,7 @@
 
             muteCommand: {
                 command: 'mute',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
