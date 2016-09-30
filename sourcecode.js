@@ -2451,7 +2451,7 @@
                 }
             },
 
-            killCommand: {
+            dieCommand: {
                 command: 'DIE',
                 rank: 'bouncer',
                 type: 'exact',
