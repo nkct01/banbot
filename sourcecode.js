@@ -298,7 +298,7 @@
             etaRestriction: false,
             welcome: false,
             opLink: null,
-            rulesLink: "https://goo.gl/LsT5zA",
+            rulesLink: "https://goo.gl/V8r1j8",
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
