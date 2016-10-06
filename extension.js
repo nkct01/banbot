@@ -237,7 +237,7 @@
       etaRestriction: false,
       welcome: false,
       opLink: null,
-      rulesLink: "hhttps://github.com/smashbro12/arkhambot/blob/master/doc/rules.md",
+      rulesLink: "https://github.com/smashbro12/arkhambot/blob/master/doc/rules.md",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
