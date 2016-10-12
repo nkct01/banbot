@@ -3,25 +3,25 @@ PlugD Rules
 These are the rules that both the staff and the community must follow. 
 
 1.
- Replaying a song which has been played within the last 50 songs will result in the following punishments:
+Replaying a song which has been played within the last 50 songs will result in the following punishments:
  First offence: Song is skipped
  Second offence: Song is skipped & Removal from the  waitlist
  Third offence: 1 hour ban
  Fourth offence: 1 day ban
 
 2.
- Playing a ‘Troll’ song will result in the following punishments:
+Playing a ‘Troll’ song will result in the following punishments:
  First offence: Song is skipped
  Second offence: Song is skipped & Removal from the  waitlist
  Third offence: 1 hour ban
  Fourth offence: 1 day ban
 3.
- Playing a song longer than 6 minutes will result in the following punishments:
+Playing a song longer than 6 minutes will result in the following punishments:
  First offence: Song is skipped
  Second offence: Sone is skipped & Removal from the waitlist
 
 4.
- Playing a normal video  (a video that is not a song. E.g, The latest drama alert etc) will result in the following punishments:
+Playing a normal video  (a video that is not a song. E.g, The latest drama alert etc) will result in the following punishments:
  First offence: Song is skipped
  Second offence: Song is skipped & Removal from the waitlist
  Third offence: 1 hour ban
@@ -29,25 +29,25 @@ These are the rules that both the staff and the community must follow.
  Fifth offence: Permanent ban
 
 5.
- Playing a song that is not English will result in the following punishments:
+Playing a song that is not English will result in the following punishments:
  First offence: Song is skipped
  Second offence: Song is skipped & removal from the waitlist
  Third offence:  1 hour ban
  Fourth offence: 1 day ban
 
 6.
- Playing an inappropriate video (racist, pornographic, offencive, excessive swearing) will result in the following punishments:
+Playing an inappropriate video (racist, pornographic, offencive, excessive swearing) will result in the following punishments:
  First offence: Song is skipped
  Second offence:  Song is skipped & Removal from the  waitlist
  Third offence: 1 hour ban
 
 7.
- Excessively playing inappropriate videos (racist pornographic, offencive, excessive swearing) will result in the following punishments:
+Excessively playing inappropriate videos (racist pornographic, offencive, excessive swearing) will result in the following punishments:
  First offence: 1 day ban
  Second offence: Permanent ban
 
 8.
- Spamming the PlugDJ will result in the following punishments:
+Spamming the PlugDJ will result in the following punishments:
  First offence: Warning ( @Codylan, please watch the spam)
  Second offence: 15 minute mute
  Third offence: 30 minute mute
@@ -55,19 +55,19 @@ These are the rules that both the staff and the community must follow.
  Fifth offence: 1 day mute
 
 9.
- Disrespecting other members of the PlugDj will result in the following punishments:
+Disrespecting other members of the PlugDj will result in the following punishments:
  First offence: Warning
  Second offence:  30 minute mute
  Third offence: 1 hour mute
  Fourth offence: 1 day mute
 
 10.
- Threatening to Hack, DDoS or DOX other members will result in the following punishments:
+Threatening to Hack, DDoS or DOX other members will result in the following punishments:
  First offence: 1 day ban
  Second offence: Permanent ban 
 
 11.
- Blatantly advertising another server, You-Tube channel, etc.:
+Blatantly advertising another server, You-Tube channel, etc.:
  First offence: 1 day ban
  Second offence: Permanent ban
 
