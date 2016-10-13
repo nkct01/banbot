@@ -2,13 +2,20 @@
 PlugD Rules
 These are the rules that both the staff and the community must follow. 
 
+
 1.
+
 Replaying a song which has been played within the last 50 songs will result in the following punishments:
  
  First offence: Song is skipped
+ 
  Second offence: Song is skipped & Removal from the  waitlist
+ 
  Third offence: 1 hour ban
+ 
  Fourth offence: 1 day ban
+
+
 
 2.
 
@@ -22,6 +29,8 @@ Playing a ‘Troll’ song will result in the following punishments:
  
  Fourth offence: 1 day ban
  
+ 
+ 
 3.
 
 Playing a song longer than 6 minutes will result in the following punishments:
@@ -29,6 +38,8 @@ Playing a song longer than 6 minutes will result in the following punishments:
 First offence: Song is skipped
 
 Second offence: Sone is skipped & Removal from the waitlist
+
+
 
 4.
 
@@ -44,6 +55,8 @@ Fourth offence: 1 day ban
 
 Fifth offence: Permanent ban
 
+
+
 5.
 
 Playing a song that is not English will result in the following punishments:
@@ -56,6 +69,8 @@ Third offence:  1 hour ban
 
 Fourth offence: 1 day ban
 
+
+
 6.
 
 Playing an inappropriate video (racist, pornographic, offencive, excessive swearing) will result in the following punishments:
@@ -66,6 +81,8 @@ Second offence:  Song is skipped & Removal from the  waitlist
 
 Third offence: 1 hour ban
 
+
+
 7.
 
 Excessively playing inappropriate videos (racist pornographic, offencive, excessive swearing) will result in the following punishments:
@@ -73,6 +90,8 @@ Excessively playing inappropriate videos (racist pornographic, offencive, excess
 First offence: 1 day ban
 
 Second offence: Permanent ban
+
+
 
 8.
 
@@ -88,6 +107,8 @@ Fourth offence: 1 hour mute
 
 Fifth offence: 1 day mute
 
+
+
 9.
 
 Disrespecting other members of the PlugDj will result in the following punishments:
@@ -100,6 +121,8 @@ Third offence: 1 hour mute
 
 Fourth offence: 1 day mute
 
+
+
 10.
 
 Threatening to Hack, DDoS or DOX other members will result in the following punishments:
@@ -107,6 +130,8 @@ Threatening to Hack, DDoS or DOX other members will result in the following puni
 First offence: 1 day ban
 
 Second offence: Permanent ban 
+
+
 
 11.
 
