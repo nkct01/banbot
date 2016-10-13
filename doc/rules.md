@@ -5,7 +5,7 @@ These are the rules that both the staff and the community must follow.
 
 1.
 
-Replaying a song which has been played within the last 50 songs will result in the following punishments:
+ Replaying a song which has been played within the last 50 songs will result in the following punishments:
  
  First offence: Song is skipped
  
