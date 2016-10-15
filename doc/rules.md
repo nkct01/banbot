@@ -127,9 +127,9 @@ Fourth offence: 1 day mute
 
 Threatening to Hack, DDoS or DOX other members will result in the following punishments:
 
-First offence: 1 day ban
+First offense: 1 day ban
 
-Second offence: Permanent ban 
+Second offense: Permanent ban 
 
 
 
@@ -137,9 +137,21 @@ Second offence: Permanent ban
 
 Blatantly advertising another server, You-Tube channel, etc.:
 
-First offence: 1 day ban
+First offense: 1 day ban
 
-Second offence: Permanent ban
+Second offense: Permanent ban
+
+12.
+
+Typing languages other than english in chat:
+
+First offense: 15m mute
+
+Second offense: 30m mute
+
+Third offense: 45 minute mute
+
+Fourth offense: 1 hour ban
 
 Commands
 As a normal user on the plug.dj you have access to multiple different commands which either can help you with any questions you have or you can use for a bit of fun. 
